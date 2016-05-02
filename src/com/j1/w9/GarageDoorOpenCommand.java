@@ -1,12 +1,12 @@
-package command.light;
+package com.j1.w9;
 
 public class GarageDoorOpenCommand implements Command {
- Door door;
+ GarageDoor door;
 
- public GarageDoorOpenCommand(Door door) {
+ public GarageDoorOpenCommand(GarageDoor door) {
   this.door = door;
  }
  public void execute() {
-  door.up();
+  door.open();
  }
 }
